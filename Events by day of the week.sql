@@ -17,6 +17,3 @@ JOIN `cartodb-on-gcp-cs-team.flinares.user_list` u
 WHERE a.type IN ('MapCreated', 'WorkflowExecutionComplete')
 GROUP BY day_of_week, day_name, u.email
 ORDER BY day_of_week, event_count DESC
-
---this can be useful to identify patterns, maybe an email related to carto is more efective on tuesdays
---notice that day of the week starts on Sundays
